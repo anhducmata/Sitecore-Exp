@@ -21,8 +21,8 @@ public static SearchResults DoSearch(string searchTerm){
             {
 				// Search the index for items which match the predicate
                 var searchResults = searchContext
-												.GetQueryable<SearchModel>()
-												.Where(searchPredicate); 
+			.GetQueryable<SearchModel>()
+			.Where(searchPredicate); 
  
                 // This will get all of the results, which is not reccomended
                 var fullResults = searchResults.GetResults();
